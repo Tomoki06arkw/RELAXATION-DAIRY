@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='js/jquery.min.js'></script>
+
+  <title>Relaxation</title>
+</head>
+
+
+<body>
+  
+
+  <div class="main">
+        <div class="title">
+          <span>今</span>
+          <span>日</span>
+          <span>も</span>
+          <span>１</span>
+          <span>日</span>  
+          <span>、</span>
+          <span>本</span>
+          <span>当</span>
+          <span>に</span>
+          <span>お</span>
+          <span>疲</span>
+          <span>れ</span>
+          <span>さ</span>
+          <span>ま</span>
+          <span>で</span>
+          <span>し</span>
+          <span>た</span>
+          <span>。</span>
+        </div> 
+
+        <div class="enter">
+          <a href="#"><h2>Enter the Room</h2></a> 
+        </div>
+        <div class="under-l">
+          <div class="log">
+            <a href="#">ログイン</a>/
+            <a href="#">アカウント登録</a>
+          </div>
+        </div>
+  </div> 
+
+
+  
+
+  <script>
+    const CLASSNAME = "-visible";
+    const TIMEOUT = 1500;
+    const $target = $(".title");
+
+    setInterval(() => {
+      $target.addClass(CLASSNAME);
+      setTimeout(() => {
+        $target.removeClass(CLASSNAME);
+      }, TIMEOUT);
+    }, TIMEOUT * 3);
+  </script>
+</body>
+</html>
