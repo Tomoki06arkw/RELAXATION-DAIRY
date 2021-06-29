@@ -25,11 +25,13 @@
         </div> 
 
       <% if user_signed_in? %>
-        <div class="enter">
-          <a href="#"><h2>Enter the Room</h2></a> 
-        </div>
-        <div class="log-out">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <div class="main">
+          <div class="enter">
+            <%= link_to "Enter the Room",  new_text_path, class: "btn" %>
+          </div>
+          <div class="log-out">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn2" %>
+          </div>
         </div>
       <% else %>
         <div class="under-l">

@@ -18,13 +18,13 @@
 }
 
 .title span:nth-child(2) {
-  transition-delay: 0.04s;
-}
-.title span:nth-child(3) {
   transition-delay: 0.06s;
 }
+.title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
 .title span:nth-child(4) {
-  transition-delay: 0.08s;
+  transition-delay: 0.18s;
 }
 .title span:nth-child(5) {
   transition-delay: 0.24s;
@@ -86,15 +86,21 @@ a:hover{
   color: #000;
 }
 
-.log {
-  text-align: center;
-}
-
-.log {
-  font-size: 20px;
-  margin-top: 30px;
-}
 
 .log-out {
   text-align: center;
+}
+
+.log {
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn {
+  font-size: 40px;
+}
+
+.btn2 {
+  font-size: 25px;
 }

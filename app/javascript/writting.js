@@ -1,6 +1,6 @@
 $(function () {
     const CLASSNAME = "-visible";
-    const TIMEOUT = 1500;
+    const TIMEOUT = 4000;
     const $target = $(".title");
 
     setInterval(() => {
@@ -8,5 +8,5 @@ $(function () {
       setTimeout(() => {
         $target.removeClass(CLASSNAME);
       }, TIMEOUT);
-    }, TIMEOUT * 3)
+    }, TIMEOUT * 2)
 });
