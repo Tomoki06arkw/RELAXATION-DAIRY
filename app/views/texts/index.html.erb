@@ -24,15 +24,21 @@
           <span>。</span>
         </div> 
 
+      <% if user_signed_in? %>
         <div class="enter">
           <a href="#"><h2>Enter the Room</h2></a> 
         </div>
+        <div class="log-out">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        </div>
+      <% else %>
         <div class="under-l">
           <div class="log">
-            <a href="#">ログイン</a>/
-            <a href="#">アカウント登録</a>
+            <%= link_to "新規登録", new_user_registration_path %> /
+            <%= link_to "ログイン", new_user_session_path %>
           </div>
         </div>
+      <% end %>
   </div> 
   
   
