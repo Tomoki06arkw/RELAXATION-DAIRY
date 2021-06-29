@@ -9,4 +9,4 @@ $(function () {
         $target.removeClass(CLASSNAME);
       }, TIMEOUT);
     }, TIMEOUT * 3)
-  });
+});
