@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_06_29_041220) do
 
   create_table "private_people", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
-    t.integer "address_id", null: false
+    t.string "address", null: false
     t.text "profile", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false

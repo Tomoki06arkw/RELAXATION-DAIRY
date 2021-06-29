@@ -3,7 +3,7 @@ class PrivatePerson < ApplicationRecord
   
   with_options presence: true do
     validates :nickname
-    validates :address_id
+    validates :address
     validates :profile
   end
 end

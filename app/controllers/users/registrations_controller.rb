@@ -31,12 +31,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user.save
     session["devise.regist_data"]["user"].clear
     sign_in(:user, @user)
+    redirect_to root_path
   end
  
   private
  
   def private_person_params
-    params.require(:private_person).permit(:nickname, :address_id, :profile)
+    params.require(:private_person).permit(:nickname, :address, :profile)
   end
   # GET /resource/edit
   # def edit
