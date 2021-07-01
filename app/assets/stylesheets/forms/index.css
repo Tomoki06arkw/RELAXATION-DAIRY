@@ -1,0 +1,29 @@
+.header-title {
+  font-size: 40px;
+  color: #fff;
+  text-decoration:　none;
+}
+
+
+.comment{
+  font-size: 20px;
+  color:coral;
+  text-align: center;
+}
+
+.write {
+  font-size: 30px;
+}
+
+.form-group{
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.top-header {
+  font-size: 20px;
+
+}

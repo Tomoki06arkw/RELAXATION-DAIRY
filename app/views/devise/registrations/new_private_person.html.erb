@@ -1,6 +1,7 @@
 <h2>住所情報登録</h2>
 
 <%= form_for @private_person do |f| %>
+<div class="all">
   <%= render "devise/shared/error_messages", resource: @private_person %>
 
   <div class="field">
@@ -24,3 +25,4 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

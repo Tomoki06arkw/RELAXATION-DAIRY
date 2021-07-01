@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.header-main {
+  font-size: 30px;
+  padding: 30px auto;
+  display: flex;
+  text-align: center;
+}
+
+.enter {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+a {
+  color:darkblue;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+}
+
+
+.log-out {
+  text-align: center;
+}
+
+.log {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn {
+  font-size: 40px;
+}
+
+.btn2 {
+  font-size: 25px;
+}
+
+.display-4 {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+  font-size: 25px;
+  color:#aa8f7b;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+.all {
+  text-align: center;
+  font-size: 30px;
+}
+
+.ima {
+  color: red;
+}
+
+.ko {
+  display: none;
+}
+
+.main {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+}

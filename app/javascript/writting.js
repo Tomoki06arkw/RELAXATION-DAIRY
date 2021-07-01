@@ -1,6 +1,6 @@
 $(function () {
     const CLASSNAME = "-visible";
-    const TIMEOUT = 4000;
+    const TIMEOUT = 2500;
     const $target = $(".title");
 
     setInterval(() => {
