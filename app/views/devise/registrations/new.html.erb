@@ -1,6 +1,7 @@
 <h2>ユーザー登録情報</h2>
 
 <%= form_for(@user, url: user_registration_path) do |f| %>
+<div class="all">
   <%= render "devise/shared/error_messages", resource: @user %>
 
   <div class="field">
@@ -37,3 +38,4 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

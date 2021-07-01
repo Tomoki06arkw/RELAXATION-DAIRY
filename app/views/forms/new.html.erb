@@ -1,0 +1,126 @@
+<div class="head-image">
+    <hr>
+
+    <div class="container">
+      <form action="" method="post" class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <div class="top-header">
+            <p>ここは完全にプライベートの部屋です。何を書いても誰にも見られません。
+              <br>安心して好き放題書いて頭の中を整理して下さい。
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="name">お名前<span class="badge badge-danger"></span></label>
+            <input type="text" id="name" name="name" class="form-control" placeholder=" お名前を空白で区切って入力して下さい。" required>
+          </div>
+          <div class="form-group">
+            <label for="job">ご職業</label>
+            <select id="job" name="job" class="form-control" size="４" multiple>
+              <option value="">選択してください</option>
+              <option value="会社員">会社員</option>
+              <option value="学生">学生</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">ゼロ秒愚痴りスタート</label>
+            <textarea name="message" id="message" rows="10" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送信する</button>
+        </div>
+      </form>
+    </div>
+    <div class="container"> 
+      <p id="timer">00:00:00</p>
+      <div>
+        <button id="start_stop" class="btn btn-lg btn-primary">START</button>
+      </div>
+    </div>
+
+    <script>
+      var start;
+      var timer_id;
+
+      document.getElementById('start_stop').addEventListener('click', function(){
+        if (this.innerHTML === 'START') {
+            start = new Date();
+
+
+
+            timer_id = setInterval(goTimer, 10);
+
+            //STOPボタンにする
+            this.innerHTML = 'STOP';
+            this.classList.remove('btn-primary');
+            this.classList.add('btn-danger');
+        } else {
+            clearInterval(timer_id);
+
+            this.innerHTML = 'START';
+            this.classList.remove('btn-danger');
+            this.classList.add('btn-primary')
+        }
+        
+      });
+      var addZero = function(value) {
+        if (value < 10) {
+          value = '0' + value;
+        }
+        return value;
+      }
+
+
+      var goTimer = function() {
+        var now = new Date();
+
+        var milli = now.getTime() - start.getTime();
+        var seconds = Math.floor(milli / 1000);
+        var minutes = Math.floor(seconds / 60);
+        var hours = Math.floor(minutes / 60);
+
+        seconds = seconds - minutes * 60;
+        minutes = minutes - hours * 60;
+
+        hours = addZero(hours);
+        minutes = addZero(minutes);
+        seconds = addZero(seconds);
+
+
+        document.getElementById('timer').innerHTML =  hours + ':' +  minutes + ':' + seconds;
+      };
+    </script>
+
+    <hr>
+
+    <div class="container">
+        <div class="col-sm-12">
+            <h1 class="footer-word">お疲れさまでした。</h1>
+            <p>後日に見返してみましょう</p>
+        </div>
+        <div class="row"></div>
+          <div class="col-sm-12 text-right">
+            <%= link_to "HOMEへ戻る", root_path, class: "back" %>
+          </div>
+        </div>
+    </div>
+
+
+  <div class="container pt-3">
+    <div class="main">
+      <div class="jumbotron">
+        <h1 class="display-4">REX</h1>
+        <p class="lead">リラクゼーションは今ものすごく注目を浴びているリラックス方法です</p>
+        <hr class="my-4">
+        <p>フィットネスメイト</p>
+        <a class="btn btn-primary btn-lg" href="#">Just do it!!</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="image-footer">
+    <img src="image/nature.jpg">
+  </div> 

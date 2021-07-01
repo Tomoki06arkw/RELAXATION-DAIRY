@@ -1,48 +1,98 @@
-
 <body>
 
-
-  <div class="main">
-        <div class="title">
-          <span>今</span>
-          <span>日</span>
-          <span>も</span>
-          <span>１</span>
-          <span>日</span>  
-          <span>、</span>
-          <span>本</span>
-          <span>当</span>
-          <span>に</span>
-          <span>お</span>
-          <span>疲</span>
-          <span>れ</span>
-          <span>さ</span>
-          <span>ま</span>
-          <span>で</span>
-          <span>し</span>
-          <span>た</span>
-          <span>。</span>
+  <div class="container">
+    <% if user_signed_in? %>
+      <div class="main">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="article">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="lead">この場所はイライラ、ストレス、悲しみ、辛いなど<br>
+              そういった感情を和らげたり<br>
+              向き合ったり、投げ飛ばしたりする場所になります。
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="enter">
+          <%= link_to "Enter the Room",  forms_path, class: "btn" %>
+        </div>
+        <br>
+        <br>
+        <div class="log-out">
+          <%= link_to "マイページ", "#", class: "btn2" %>/
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn2" %>
+        </div>
+      </div>
+    <% else %>
+      <div class="main">
+        <div class="header-main">
+          <div class="title">
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>今</span>
+            <span>日</span>
+            <span>も</span>
+            <span>１</span>
+            <span>日</span>
+            <span></span>
+            <span>本</span>
+            <span>当</span>
+            <span>に</span>
+            <span>お</span>
+            <span>疲</span>
+            <span>れ</span>
+            <span>さ</span>
+            <span>ま</span>
+            <span>で</span>
+            <span>し</span>
+            <span>た</span>
+            <span>。</span>
+            <span>リ</span>
+            <span>ラ</span>
+            <span>ッ</span>
+            <span>ク</span>
+            <span>ス</span>
+            <span>し</span>
+            <span>ま</span>
+            <span>し</span>
+            <span>ょ</span>
+            <span>。</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span>✪</span>
+            <span></span>
+            <span><span>
+          </div> 
         </div> 
+        <div class="article">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="lead">寝れない。緊張する。考え事が巡る。<br>
+              そんな感情を落ち着けるためにこのアプリケーションを作りました。
+              <br>
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="log">
+          <%= link_to "新規登録", new_user_registration_path %> /
+          <%= link_to "ログイン", new_user_session_path %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 
-      <% if user_signed_in? %>
-        <div class="main">
-          <div class="enter">
-            <%= link_to "Enter the Room",  new_text_path, class: "btn" %>
-          </div>
-          <div class="log-out">
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn2" %>
-          </div>
-        </div>
-      <% else %>
-        <div class="under-l">
-          <div class="log">
-            <%= link_to "新規登録", new_user_registration_path %> /
-            <%= link_to "ログイン", new_user_session_path %>
-          </div>
-        </div>
-      <% end %>
-  </div> 
-  
-  
 </body>
-</html>
