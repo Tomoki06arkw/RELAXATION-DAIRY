@@ -27,15 +27,15 @@
                   <%= f.text_area :content, class: :form__text, id:"form_content" %>
                 </div>
                
-                <%# <div class="field"> %>
-                  <%# <%= f.label :image, "プロトタイプの画像" %><br /> %>
-                  <%# <%= f.file_field :image, id:"prototype_image" %> %>
-                <%# </div> %>
-            
+                <div class="field">
+                  <%= f.label :image, "投稿の画像" %><br />
+                  <%= f.file_field :image, id:"form_image" %>
+                </div>
 
                 <div class="actions">
                   <%= f.submit "保存する", class: :form__btn  %>
                 </div>
+
               <% end %>
               <%# 部分テンプレートでフォームを表示する %>
           </div>

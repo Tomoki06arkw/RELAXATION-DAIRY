@@ -8,7 +8,7 @@ class FormsController < ApplicationController
   end
 
   def create
-    @form = Form.create(form_params)
+    @form = Form.new(form_params)
     if @form.save
       redirect_to root_path
     else
@@ -19,11 +19,11 @@ class FormsController < ApplicationController
   def show
     @form = Form.find(params[:id])
   end
-
-
+  
   private
+
   def form_params
-    params.require(:form).permit(:title, :content, :image, :nickname, :address, :profile).merge(user_id: current_user.id, private_person_id: params[:private_person_id])
+    params.require(:form).permit(:title, :content, :image).merge(user_id: current_user.id)
   end
   
 end
