@@ -9,4 +9,5 @@ class User < ApplicationRecord
     validates :age
   end
   has_one :private_person
+  has_many :forms
 end

@@ -65,15 +65,10 @@ h2 {
   font-size: 30px;
 }
 
-.ima {
-  color: red;
-}
-
 .ko {
   display: none;
 }
 
-.main {
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
-  background-size: cover;
+.top-name {
+  font-size: 30px;
 }

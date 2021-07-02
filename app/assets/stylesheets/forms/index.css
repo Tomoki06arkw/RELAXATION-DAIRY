@@ -1,9 +1,32 @@
-.header-title {
-  font-size: 40px;
-  color: #fff;
-  text-decoration:　none;
+.main-header{
+  display: flex;
+  justify-content: space-between;
 }
 
+.left-header {
+  padding: 40px 0 0 40px;
+}
+
+.right-header {
+  padding: 40px 40px;
+  list-style: none;
+}
+
+.title {
+  font-size: 40px;
+  color: #aa8f7b;
+}
+
+.my-page {
+  color: #aa8f7b;
+  text-decoration: none;
+  font-size: 25px
+}
+
+.log-out {
+  color: #aa8f7b;
+  font-size: 25px;
+}
 
 .comment{
   font-size: 20px;
@@ -13,6 +36,7 @@
 
 .write {
   font-size: 30px;
+  color:navy;
 }
 
 .form-group{
@@ -25,5 +49,21 @@
 
 .top-header {
   font-size: 20px;
+}
 
+.head-image {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+}
+
+.tatami {
+  font-size: 30px;
+}
+
+.top-message {
+  color:blanchedalmond;
+}
+
+.user__wrapper {
+  text-align: center;
 }

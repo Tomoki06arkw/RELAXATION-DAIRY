@@ -4,5 +4,8 @@ class FormsController < ApplicationController
   
   def new
   end
+
+  def show
+  end
   
 end
