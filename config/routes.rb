@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   end
 
   root to: "texts#index"
-  resources :forms, only: [:index, :new, :show]
+  resources :forms, only: [:index, :new, :create, :show]
 end
