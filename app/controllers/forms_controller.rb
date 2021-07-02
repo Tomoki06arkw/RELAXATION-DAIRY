@@ -23,7 +23,7 @@ class FormsController < ApplicationController
 
   private
   def form_params
-    params.require(:form).permit(:title, :content, :nickname, :address, :profile).merge(user_id: current_user.id, private_person_id: params[:private_person_id])
+    params.require(:form).permit(:title, :content, :image, :nickname, :address, :profile).merge(user_id: current_user.id, private_person_id: params[:private_person_id])
   end
   
 end
