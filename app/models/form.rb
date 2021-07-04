@@ -2,9 +2,11 @@ class Form < ApplicationRecord
   belongs_to :user
   has_one_attached :image
 
-  validates :image, presence: true
-
-  def was_attached?
-    self.image.attached?
+  with_options presence: true do
+    validates :image
+    validates :title
+    validates :content
   end
+  
+
 end

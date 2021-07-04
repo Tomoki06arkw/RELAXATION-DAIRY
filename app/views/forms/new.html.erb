@@ -19,21 +19,23 @@
               <%= form_with model: @form, local: true do |f|%>
                 <div class="field">
                   <%= f.label :title, "今日の出来事" %><br />
-                  <%= f.text_field :title, id:"form_title" %>
+                  <%= f.text_field :title, id:"form_title", class: "field_top" %>
                 </div>
-
+                <br>
+                <br>
                 <div class="field">
                   <%= f.label :content, "ゼロ秒思考で書きましょう。" %><br />
-                  <%= f.text_area :content, class: :form__text, id:"form_content" %>
+                  <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content" %>
                 </div>
-               
-                <div class="field">
+                <br>
+                <br>
+                <div class="field-image">
                   <%= f.label :image, "投稿の画像" %><br />
-                  <%= f.file_field :image, id:"form_image" %>
+                  <%= f.file_field :image, id:"form_image", class:"field_buttom" %>
                 </div>
 
                 <div class="actions">
-                  <%= f.submit "保存する", class: :form__btn  %>
+                  <%= f.submit "投稿を保存する", class: :form__btn  %>
                 </div>
 
               <% end %>
@@ -55,19 +57,28 @@
 
     <hr>
     <hr>
-
+    <br>
+    <br>
+    <br>
     <div class="container">
         <div class="footer-content">
             <h1 class="footer-word">お疲れさまでした。</h1>
+    <br>
+    <br>
             <p class="footer-word">後日に見返してみましょう</p>
+    <br>
+    <br>
         </div>
-        <div class="row"></div>
-          <div class="col-sm-12 text-right">
+        <div class="row">
+          <div class="footer-buttom">
             <%= link_to "HOMEへ戻る", root_path, class: "back" %>//
             <%= link_to "MY-PAGE", form_path(current_user.id)%>
           </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
 
 
   <%# <div class="container pt-3">
