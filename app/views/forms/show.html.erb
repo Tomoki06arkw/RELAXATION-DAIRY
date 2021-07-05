@@ -12,11 +12,11 @@
           </tr>
           <tr>
             <th class="table__col1">プロフィール</th>
-            <td class="table__col2"><%= "ゲストさん" %></td>
+            <td class="table__col2"><%= @form.user.age %></td>
           </tr>
           <tr>
             <th class="table__col1">所属</th>
-            <td class="table__col2"><%= "無所属" %></td>
+            <td class="table__col2"><%= "#" %></td>
           </tr>
           <div class="from_image">
           </div>
@@ -25,6 +25,27 @@
       <h2 class="page-heading">
         <%= "#{@form.user.name}さんの日記投稿一覧"%>
         
+        <div class="calender">
+           <p>
+            <strong>時間</strong>
+            <%= @form.start_time.strftime("%Y-%m-%d %H:%M") %>
+          </p>
+          <strong>タイトル</strong><br>
+            <%= @form.title %>
+          </p>
+
+          <p>
+            <strong>内容</strong><br>
+            <%= @form.content %>
+          </p>
+        <%= image_tag(@form.image) %>
+
+        <div class="header-content">
+          <%= link_to "編集", edit_form_path(@form.id)%>
+          <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>
+        </div> 
+
+
       </h2>
       <%= link_to "トップページに戻る", forms_path %>
     </div>
