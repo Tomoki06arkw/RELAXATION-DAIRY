@@ -19,11 +19,32 @@ class FormsController < ApplicationController
   def show
     @form = Form.find(params[:id])
   end
+
+  def edit
+    @form = Form.find(params[:id])
+  end
+
+
+  def update
+    @form = Form.find(params[:id])
+    if @form.update(form_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @form = Form.find(params[:id])
+    if @form.destroy
+      redirect_to root_path
+    end
+  end
   
   private
 
   def form_params
-    params.require(:form).permit(:title, :content, :image).merge(user_id: current_user.id)
+    params.require(:form).permit(:title, :content, :start_time, :image).merge(user_id: current_user.id)
   end
   
 end
