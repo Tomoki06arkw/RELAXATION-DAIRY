@@ -3,6 +3,7 @@ class CreateForms < ActiveRecord::Migration[6.0]
     create_table :forms do |t|
       t.string :title,          null: false
       t.text :content,          null: false
+      t.datetime :start_time
       t.references :user,       foregin_key: true
       t.timestamps
     end

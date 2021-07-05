@@ -29,6 +29,10 @@
                 </div>
                 <br>
                 <br>
+                <div class="time">
+                     <%= f.label :start_time %>
+                     <%= f.datetime_select :start_time %>
+                </div>
                 <div class="field-image">
                   <%= f.label :image, "投稿の画像" %><br />
                   <%= f.file_field :image, id:"form_image", class:"field_buttom" %>
@@ -44,12 +48,12 @@
         </div>
     </div>
 
-    <div class="container"> 
-      <p id="timer">00:00:00</p>
-      <div>
-        <button id="start_stop" class="btn btn-lg btn-primary">START</button>
-      </div>
-    </div>
+    <%# <div class="container">  %>
+      <%# <p id="timer">00:00:00</p> %>
+      <%# <div> %>
+        <%# <button id="start_stop" class="btn btn-lg btn-primary">START</button> %>
+      <%# </div> %>
+    <%# </div> %>
 
     <script>
       

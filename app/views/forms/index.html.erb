@@ -2,17 +2,18 @@
       <%= render "shared/header" %>
 
   <div class="container">
-    <div class="row">
-        <div class="top-name"><p class="logo">Relaxation-Writing</p></div>
-          <!-- <div class="col-2 text-primary"><a class="think">理念・目的</a></div>
-      <div class="col-2 text-primary"><a class="log-acount">ログイン/アカウント作成</a></div>   -->
-    </div>
+      <div class="content">
+              <div class="title">
+                <span>IT'S TIME TO RELAX</span>
+              </div> 
+      </div>
       <div class="template">
         
           <h1 class="tatami"></h1>
           <br>
           <br>
           <br>
+          
           <br>
           <p class="lead">この場所はイライラ、ストレス、悲しみ、辛いなど<br>
             そういった感情を和らげたり<br>
@@ -22,14 +23,31 @@
           <br>
           <br> 
       </div>
-      
+      <br>
+      <br>
       <div class="link">
         <%= link_to "Writing page", new_form_path, class: "write" %>
       </div>
       <br>
       <br>
       <br>
-    <div class="">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <div class="calender">
+            <%= month_calendar events: @forms do |date, forms| %>
+                <%= date.day %>
+                <% forms.each do |form| %>
+                  <div>
+                    <%= link_to form.title, form %>
+                  </div>
+                <% end %>
+            <% end %>
+        </div>
     <div class="lesson-wrapper">
         <div class="heading">
           <h2>Learn to understand How to relax!!</h2>
@@ -69,10 +87,10 @@
             <p class="txt-contents">携帯やタブレット端末を家において散歩する。このことがいかいにリラックスできるかたくさんのひとはまだ気がついていない。</p>
           </div>
         </div>
+    </div>
   </div>
 
     <footer>
       &copy; 2021 RELAXATION
    </footer>
 </body>
-
