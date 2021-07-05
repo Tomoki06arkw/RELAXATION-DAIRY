@@ -35,7 +35,7 @@
 }
 
 .write {
-  font-size: 30px;
+  font-size: 40px;
   color:navy;
 }
 
@@ -73,6 +73,6 @@
   font-size: 25px;
 }
 
-.page-heading {
-  
+.calender {
+  font-size: 40px;
 }
