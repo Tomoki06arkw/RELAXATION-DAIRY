@@ -25,7 +25,8 @@
 
 .log-out {
   color: #aa8f7b;
-  font-size: 25px;
+  font-size: 30px;
+  margin: 30px 30px;
 }
 
 .comment{
@@ -75,4 +76,18 @@
 
 .calender {
   font-size: 40px;
+}
+
+.back {
+  font-size: 25px;
+}
+
+.footer-logo {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.content-memo {
+  text-align: center;
 }

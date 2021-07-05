@@ -16,6 +16,7 @@
         <div class="inner">
           <div class="form__wrapper">
             <h2 class="page-heading">新規日記作成</h2>
+            <br>
               <%= form_with model: @form, local: true do |f|%>
                 <div class="field">
                   <%= f.label :title, "今日の出来事" %><br />
@@ -25,6 +26,7 @@
                 <br>
                 <div class="field">
                   <%= f.label :content, "ゼロ秒思考で書きましょう。" %><br />
+                  <br>
                   <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content" %>
                 </div>
                 <br>
@@ -33,27 +35,28 @@
                      <%= f.label :start_time %>
                      <%= f.datetime_select :start_time %>
                 </div>
+                <br>
                 <div class="field-image">
                   <%= f.label :image, "投稿の画像" %><br />
                   <%= f.file_field :image, id:"form_image", class:"field_buttom" %>
                 </div>
-
+                <br>
                 <div class="actions">
                   <%= f.submit "投稿を保存する", class: :form__btn  %>
                 </div>
-
+                <br>
               <% end %>
               <%# 部分テンプレートでフォームを表示する %>
           </div>
         </div>
     </div>
 
-    <%# <div class="container">  %>
-      <%# <p id="timer">00:00:00</p> %>
-      <%# <div> %>
-        <%# <button id="start_stop" class="btn btn-lg btn-primary">START</button> %>
-      <%# </div> %>
-    <%# </div> %>
+     <div class="container"> 
+      <p id="timer">00:00:00</p>
+      <div>
+        <button id="start_stop" class="btn btn-lg btn-primary">START</button>
+      </div>
+    </div>
 
     <script>
       
@@ -69,31 +72,17 @@
             <h1 class="footer-word">お疲れさまでした。</h1>
     <br>
     <br>
-            <p class="footer-word">後日に見返してみましょう</p>
+            <p class="footer-word">後日に見返してみましょう。</p>
     <br>
     <br>
         </div>
         <div class="row">
           <div class="footer-buttom">
             <%= link_to "HOMEへ戻る", root_path, class: "back" %>//
-            <%= link_to "MY-PAGE", form_path(current_user.id)%>
           </div>
         </div>
     </div>
     <br>
     <br>
-    <br>
-
-
-  <%# <div class="container pt-3">
-    <div class="main">
-      <div class="jumbotron">
-        <h1 class="display-4">REX</h1>
-        <p class="lead">リラクゼーションは今ものすごく注目を浴びているリラックス方法です</p>
-        <hr class="my-4">
-        <p>フィットネスメイト</p>
-        <a class="btn btn-primary btn-lg" href="#">Just do it!!</a>
-      </div>
-    </div>
-  </div> %>
+    <br> 
 </div>
