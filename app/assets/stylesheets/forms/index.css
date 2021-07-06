@@ -53,8 +53,9 @@
 }
 
 .head-image {
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-image: url(../image9.jpeg);
   background-size: cover;
+  background-position: center center;
 }
 
 .tatami {
@@ -143,10 +144,6 @@
   text-align: center;
 }
 
-.page-heading {
-  margin: 40px 0 20px;
-}
-
 .main-edit {
   text-align: center;
   font-size: 25px;
@@ -157,3 +154,9 @@
   font-size: 20px;
   margin: 20px 0;
 }
+
+.content-memo {
+  font-size: 30px;
+  color: #aa8f7b;
+}
+
