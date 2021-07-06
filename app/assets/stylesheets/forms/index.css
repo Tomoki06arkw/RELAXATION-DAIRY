@@ -63,6 +63,7 @@
 
 .top-message {
   color:blanchedalmond;
+  font-size: 25px;
 }
 
 .user__wrapper {
@@ -90,4 +91,69 @@
 
 .content-memo {
   text-align: center;
+}
+
+.footer-link {
+  text-align: center;
+}
+
+.meito {
+  font-size: 40px;
+  text-align: center;
+}
+
+.show-title {
+  font-size: 25px;
+
+}
+
+.main-title {
+  font-size: 40px;
+}
+
+.iida {
+  margin-bottom: 30px ;
+}
+
+
+.table{
+  border-collapse: collapse;
+  margin: 32px 0 32px 20px;
+  width: 50%;
+
+}
+.table__col1{
+  text-align: left;
+  font-weight: bold;
+  background: #fafafa;
+  border-collapse: collapse;
+  border: 1px solid #2b1010;
+  width: 30%;
+  padding: 8px;
+}
+.table__col2{
+  text-align: left;
+  border: 1px solid #f5f5f5;
+  border-collapse: collapse;
+  width: 70%;
+  padding: 16px 8px;
+}
+
+.page-phote {
+  text-align: center;
+}
+
+.page-heading {
+  margin: 40px 0 20px;
+}
+
+.main-edit {
+  text-align: center;
+  font-size: 25px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
 }

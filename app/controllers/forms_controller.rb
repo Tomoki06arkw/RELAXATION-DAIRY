@@ -18,6 +18,7 @@ class FormsController < ApplicationController
 
   def show
     @form = Form.find(params[:id])
+    @forms = Form.all
   end
 
   def edit
