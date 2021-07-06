@@ -25,6 +25,11 @@ a:hover{
   color: white;
 }
 
+.dairy {
+  font-size: 35px;
+  color: white;
+}
+
 
 .log-out {
   text-align: center;
@@ -50,7 +55,7 @@ a:hover{
 
 .lead {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   color:#aa8f7b;
 }
 
@@ -86,7 +91,7 @@ h2 {
 }
 
 .field {
-  color: #aa8f7b;
+  color: white;
   font-size: 30px;
 }
 
@@ -101,4 +106,20 @@ h2 {
 
 .field_buttom {
   margin-bottom: 30px;
+}
+
+.context {
+  color:#aa8f7b;
+}
+
+.time {
+  font-size: 30px;
+}
+
+.field-image {
+  font-size: 20px;
+}
+
+.form_btn {
+  font-size: 25px;
 }
