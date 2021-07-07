@@ -1,8 +1,6 @@
 <div class="head-image">
     <br>
     <br>
-    <hr>
-    <hr>
     <div class="container">
         <div class="col-sm-8 offset-sm-2">
           <div class="top-header">
@@ -11,13 +9,12 @@
             </p>
           </div>
     </div>
+    <br>
     <div class="music">
-      
-     <audio controls preload="auto">
-      <source src="https://hakuhin.jp/download/js/audio/sample_00.m4a" type="audio/mp4">
-      
-      未対応時に表示される文字 
-    </audio>
+        <audio controls preload="auto">
+          <source src="https://hakuhin.jp/download/js/audio/sample_00.m4a" type="audio/mp4">
+        </audio>
+    </div>
     <div class="main">
         <div class="inner">
           <div class="form__wrapper">
@@ -38,7 +35,7 @@
                 <br>
                 <br>
                 <div class="time">
-                     <%= f.label :start_time %>
+                     <%= f.label :start_time, "日付" %>
                      <%= f.datetime_select :start_time %>
                 </div>
                 <br>
@@ -63,13 +60,6 @@
         <button id="start_stop" class="btn btn-lg btn-primary">START</button>
       </div>
     </div> %>
-
-    <script>
-      
-    </script>
-
-    <hr>
-    <hr>
     <br>
     <br>
     <br>

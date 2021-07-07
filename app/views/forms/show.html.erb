@@ -1,7 +1,8 @@
-<div class="main">
+<div class="main-2">
   <div class="inner">
     <div class="user_wrapper">
       <div class="left-page">
+      <br>
       <br>
         <h2 class="page-heading">
           <%= "#{@form.user.name}さんの日記投稿"%>
@@ -23,11 +24,14 @@
             </tbody>
           </table>
       </div>
+      <br>
+      <br>
           <div class="right-page">
             <div class="page-phote">
-            <%= image_tag(@form.image.variant(resize: '400x400')) if @form.image.attached? %>
+            <%= image_tag(@form.image.variant(resize: '500x500')) if @form.image.attached? %>
             </div>
           </div>
+          <br>
           <div class="main-edit">
           <%= link_to "編集", edit_form_path(@form.id)%> /
           <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>

@@ -27,7 +27,7 @@ a:hover{
 
 .dairy {
   font-size: 35px;
-  color: white;
+  color: #aa8f7b;
 }
 
 
@@ -63,6 +63,7 @@ h2 {
   text-align: center;
   font-size: 35px;
   color: #aa8f7b;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .all {
@@ -91,8 +92,9 @@ h2 {
 }
 
 .field {
-  color: white;
-  font-size: 30px;
+  color: #aa8f7b;
+  font-size: 35px;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .field_top {
@@ -114,6 +116,7 @@ h2 {
 
 .time {
   font-size: 30px;
+  color:#aa8f7b;
 }
 
 .field-image {
