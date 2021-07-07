@@ -58,7 +58,7 @@
 }
 
 .head-image {
-  background-image: url(../image10.jpeg);
+  background-image: url("../image10.jpeg");
   background-size: cover;
   background-position: center center;
 }
