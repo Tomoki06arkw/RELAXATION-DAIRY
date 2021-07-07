@@ -1,6 +1,11 @@
 body {
   height: 100vh;
+}
+
+.main-1 {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-size: cover;
+  background-position: center center;
 }
 
 .header-main {
