@@ -60,8 +60,8 @@
 .head-image {
   background-image: url("image10.jpg");
   background-size: cover;
-  height: auto;
-  width:auto;
+  height: 100% ;
+  width: 100% ;
   background-size: auto 100%;
   background-position: center;
 }
