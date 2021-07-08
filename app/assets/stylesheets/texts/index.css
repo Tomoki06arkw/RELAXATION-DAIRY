@@ -101,11 +101,18 @@ h2 {
 
 .field_top {
   width: 30%;
+  height: 50px;
+  font-size: 30px;
 }
 
 .field_content {
   width: 50%;
   height: 300px;
+  font-size: 30px;
+}
+
+.time-content {
+  font-size: 30px;
 }
 
 .field_buttom {
@@ -117,7 +124,7 @@ h2 {
 }
 
 .time {
-  font-size: 30px;
+  font-size: 25px;
   color:#aa8f7b;
 }
 
@@ -133,3 +140,40 @@ h2 {
   text-align: center;
 }
 
+.name-field {
+  width: 18%;
+  height: 40px;
+  font-size: 30px;
+}
+
+.age-field {
+  width: 18%;
+  height: 40px;
+  font-size: 30px;
+}
+
+.email-filed {
+  width: 18%;
+  height: 40px;
+  font-size: 30px;
+}
+
+.password {
+  width: 18%;
+  height: 40px;
+  font-size: 30px;
+}
+
+.next-btn {
+  font-size: 20px;
+}
+
+.field-main {
+  width: 18%;
+  height: 40px;
+  font-size: 30px;
+}
+
+.submit-btn {
+  font-size: 20px;
+}

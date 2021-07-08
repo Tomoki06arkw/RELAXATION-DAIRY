@@ -6,21 +6,21 @@
 
       <div class="field">
         <%= f.label :nickname %><br />
-        <%= f.text_field :nickname %>
+        <%= f.text_field :nickname, class:"field-main" %>
       </div>
 
       <div class="field">
         <%= f.label :address %><br />
-        <%= f.text_field :address %>
+        <%= f.text_field :address, class: "field-main" %>
       </div>
 
       <div class="field">
         <%= f.label :profile %><br />
-        <%= f.text_field :profile %>
+        <%= f.text_field :profile, class: "field-main" %>
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up" %>
+        <%= f.submit "登録する", class:"submit-btn" %>
       </div>
     <% end %>
 

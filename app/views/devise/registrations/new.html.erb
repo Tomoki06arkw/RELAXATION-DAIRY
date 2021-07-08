@@ -11,17 +11,17 @@
   </div>
   <div class="field">
     <%= f.label :name, "フルネーム" %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "name-field" %>
   </div>
 
   <div class="field">
     <%= f.label :age, "年齢" %><br />
-    <%= f.text_field :age %>
+    <%= f.text_field :age, class: "age-field" %>
   </div>
 
   <div class="field">
     <%= f.label :email, "メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "email-filed" %>
   </div>
 
   <div class="field">
@@ -29,16 +29,16 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> 文字以上)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, autocomplete: "new-password", class: "password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "password" %>
   </div>
   <br>
   <div class="actions">
-    <%= f.submit "次に進む" %>
+    <%= f.submit "次に進む", class: "next-btn" %>
   </div>
 <% end %>
 <%= render "devise/shared/links" %>
