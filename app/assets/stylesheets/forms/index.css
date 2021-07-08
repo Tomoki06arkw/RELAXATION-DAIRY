@@ -184,11 +184,23 @@
 }
 
 .main-2 {
-  background-image: url("../image10.jpg");
+  background-image: url("image11.jpg");
   background-size: cover;
   height: 100% ;
   width: 100% ;
   background-position: center;
   margin: 0;
   padding: 0;
+}
+
+.time {
+  text-align: center;
+}
+
+.field-image {
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
 }

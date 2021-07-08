@@ -94,6 +94,7 @@ h2 {
   color: #aa8f7b;
   font-size: 35px;
   font-family: 'Noto Serif JP', serif;
+  text-align: center;
 }
 
 
@@ -131,3 +132,4 @@ h2 {
 .header-content {
   text-align: center;
 }
+
