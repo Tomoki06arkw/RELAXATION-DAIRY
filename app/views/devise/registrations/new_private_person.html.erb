@@ -5,17 +5,17 @@
       <%= render "devise/shared/error_messages", resource: @private_person %>
 
       <div class="field">
-        <%= f.label :nickname %><br />
+        <%= f.label :nickname, "あだ名" %><br />
         <%= f.text_field :nickname, class:"field-main" %>
       </div>
 
       <div class="field">
-        <%= f.label :address %><br />
+        <%= f.label :address, "住所" %><br />
         <%= f.text_field :address, class: "field-main" %>
       </div>
 
       <div class="field">
-        <%= f.label :profile %><br />
+        <%= f.label :profile, "自己紹介" %><br />
         <%= f.text_field :profile, class: "field-main" %>
       </div>
 
