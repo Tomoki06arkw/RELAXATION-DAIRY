@@ -182,3 +182,13 @@
 .calender {
   text-align:center;
 }
+
+.main-2 {
+  background-image: url("../image10.jpg");
+  background-size: cover;
+  height: 100% ;
+  width: 100% ;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
