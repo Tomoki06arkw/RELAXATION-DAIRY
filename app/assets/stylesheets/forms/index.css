@@ -58,7 +58,7 @@
 }
 
 .head-image {
-  background-image: url("image10.jpg");
+  background-image: url("../image10.jpg");
   background-size: cover;
 }
 
@@ -174,4 +174,6 @@
 .error_message{
   color: #aa8f7b;
 }
-
+.calender {
+  text-align:center;
+}
