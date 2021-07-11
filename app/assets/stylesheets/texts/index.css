@@ -97,8 +97,6 @@ h2 {
   text-align: center;
 }
 
-
-
 .field_top {
   width: 30%;
   height: 50px;
@@ -176,4 +174,11 @@ h2 {
 
 .submit-btn {
   font-size: 20px;
+}
+
+.page-heading {
+  text-align: center;
+  padding: 40px 0 ;
+  font-size: 40px;
+  color:#aa8f7b;
 }

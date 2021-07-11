@@ -1,71 +1,56 @@
-<div class="main-2">
-  <div class="inner">
-    <div class="user_wrapper">
-      <div class="left-page">
-      <br>
-      <br>
-        <h2 class="page-heading">
-          <%= "#{@form.user.name}さんの日記投稿"%>
-        </h2>
-          <table class="table">
-            <tbody>
-              <tr>
-                <th class="table__col1">投稿日時</th>
-                <td class="table__col2"><%= @form.start_time.strftime("%Y-%m-%d %H:%M") %></td>
-              </tr>
-              <tr>
-                <th class="table__col1">タイトル</th>
-                <td class="table__col2"><%= @form.title %></td>
-              </tr>
-              <tr>
-                <th class="table__col1">コメント</th>
-                <td class="table__col2"><%=  @form.content %></td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-      <br>
-      <br>
-        <div class="right-page">
-          <div class="page-phote">
-          <%= image_tag(@form.image.variant(resize: '500x500')) if @form.image.attached? %>
+  <div class="main-2">
+    <div class="page-heading">
+            <%= "#{@form.user.name}さんの日記投稿"%>
+    </div>
+    <div class="inner">
+      <div class="user_wrapper">
+        <div class="left-page">
+              <table class="table">
+                <tbody class="table-main">
+                  <tr>
+                    <th class="table__col1">投稿日時</th>
+                    <td class="table__col2"><%= @form.start_time.strftime("%Y-%m-%d %H:%M") %></td>
+                  </tr>
+                  <tr>
+                    <th class="table__col1">タイトル</th>
+                    <td class="table__col2"><%= @form.title %></td>
+                  </tr>
+                  <tr>
+                    <th class="table__col1">コメント</th>
+                    <td class="table__col2"><%=  @form.content %></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+          <div class="right-page">
+            <div class="page-phote">
+            <%= image_tag(@form.image.variant(resize: '500x500')) if @form.image.attached? %>
+            </div>
           </div>
-        </div>
-        <br>
-        <div class="main-edit">
-        <%= link_to "編集", edit_form_path(@form.id)%> /
-        <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>
-        </div>
-    </div>
-      <div class="footer-bottom">
-          <%= link_to "トップページに戻る", forms_path %>
       </div>
-      <div class="simple-calender">
-              <div class="calender">
-                  <%= month_calendar events: @forms do |date, forms| %>
-                      <%= date.day %>
-                      <% forms.each do |form| %>
-                        <div>
-                          <%= link_to form.title, form %>
-                        </div>
-                      <% end %>
-                  <% end %>
-              </div>
+          <div class="edit-part">
+            <div class="main-edit">
+              <%= link_to "編集", edit_form_path(@form.id)%> /
+              <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>
+            </div>
+          </div>
+        <div class="footer-bottom">
+            <%= link_to "トップページに戻る", forms_path %>
+        </div>
+        <div class="simple-calender">
+                <div class="calender">
+                    <%= month_calendar events: @forms do |date, forms| %>
+                        <%= date.day %>
+                        <% forms.each do |form| %>
+                          <div>
+                            <%= link_to form.title, form %>
+                          </div>
+                        <% end %>
+                    <% end %>
+                </div>
+        </div>
       </div>
+      <br>
+      <br>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </div>
-</div>
