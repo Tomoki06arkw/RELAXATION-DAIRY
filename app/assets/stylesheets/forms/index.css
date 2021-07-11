@@ -59,7 +59,7 @@
 }
 
 .head-image {
-  background-image: url("image12.jpg");
+  background-image: url("../image12.jpg");
   background-size: cover;
   height: 100% ;
   width: 100% ;
@@ -184,7 +184,7 @@
 }
 
 .main-2 {
-  background-image: url("image11.jpg");
+  background-image: url("../image11.jpg");
   background-size: cover;
   height: 100% ;
   width: 100% ;
