@@ -26,19 +26,31 @@
       </div>
       <br>
       <br>
-          <div class="right-page">
-            <div class="page-phote">
-            <%= image_tag(@form.image.variant(resize: '500x500')) if @form.image.attached? %>
-            </div>
+        <div class="right-page">
+          <div class="page-phote">
+          <%= image_tag(@form.image.variant(resize: '500x500')) if @form.image.attached? %>
           </div>
-          <br>
-          <div class="main-edit">
-          <%= link_to "編集", edit_form_path(@form.id)%> /
-          <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>
-          </div> 
+        </div>
+        <br>
+        <div class="main-edit">
+        <%= link_to "編集", edit_form_path(@form.id)%> /
+        <%= link_to "削除", form_path(@form.id), method: :delete, class: :form__btn %>
+        </div>
     </div>
       <div class="footer-bottom">
           <%= link_to "トップページに戻る", forms_path %>
+      </div>
+      <div class="simple-calender">
+              <div class="calender">
+                  <%= month_calendar events: @forms do |date, forms| %>
+                      <%= date.day %>
+                      <% forms.each do |form| %>
+                        <div>
+                          <%= link_to form.title, form %>
+                        </div>
+                      <% end %>
+                  <% end %>
+              </div>
       </div>
     </div>
     <br>

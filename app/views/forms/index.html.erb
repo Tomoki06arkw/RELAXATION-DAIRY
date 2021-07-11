@@ -37,19 +37,6 @@
         <hr>
         <hr>
         
-      <div class="middle-content">
-            <div class="simple-calender">
-              <div class="calender">
-                  <%= month_calendar events: @forms do |date, forms| %>
-                      <%= date.day %>
-                      <% forms.each do |form| %>
-                        <div>
-                          <%= link_to form.title, form %>
-                        </div>
-                      <% end %>
-                  <% end %>
-              </div>
-            </div>
           
             <hr>
             <hr>

@@ -4,6 +4,7 @@
       <%= link_to "RELAXATION DAIRY", root_path, class: "title" %>
     </div>
     <div class="right-header">
+      <li><%= link_to 'マイページ', form_path(current_user.id), class: "my-page" %></li>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-out" %></li>
     </div>
   </div>
