@@ -16,11 +16,6 @@
   padding: 40px
 }
 
-.title {
-  font-size: 40px;
-  color: #aa8f7b;
-}
-
 .my-page {
   color: #aa8f7b;
   text-decoration: none;
@@ -43,6 +38,8 @@
 .write {
   font-size: 40px;
   color:navy;
+  border-radius: 5px;
+
 }
 
 .form-group{
@@ -214,4 +211,12 @@
   color: #aa8f7b;
   font-size: 25px;
   padding: 25px 0;
+}
+
+
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 7rem;
+  }
 }

@@ -1,4 +1,6 @@
 class FormsController < ApplicationController
+  before_action :set_form, only: [:show, :edit, :update, :destroy]
+
   def index
     @forms = Form.all
   end
@@ -17,17 +19,14 @@ class FormsController < ApplicationController
   end
 
   def show
-    @form = Form.find(params[:id])
     @forms = Form.all
   end
 
   def edit
-    @form = Form.find(params[:id])
   end
 
 
   def update
-    @form = Form.find(params[:id])
     if @form.update(form_params)
       redirect_to forms_path
     else
@@ -36,13 +35,16 @@ class FormsController < ApplicationController
   end
 
   def destroy
-    @form = Form.find(params[:id])
     if @form.destroy
-      redirect_to root_path
+      redirect_to forms_path
     end
   end
   
   private
+
+  def set_form
+    @form = Form.find(params[:id])
+  end
 
   def form_params
     params.require(:form).permit(:title, :content, :start_time, :image).merge(user_id: current_user.id)
