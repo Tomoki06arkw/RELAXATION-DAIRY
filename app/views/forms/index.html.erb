@@ -1,10 +1,27 @@
 <body>
-  <%= render "shared/header" %>
-    <div class="main-1">
-        <br>
-        <br>
-        <br>
-        <br>
+  
+    <div class="main-2">
+      <div class="main-header">
+          <div class="left-header">
+            <%= link_to "RELAXATION DAIRY", root_path, class: "title" %>
+          </div>
+          <div class="right-header">
+            <li><%= link_to 'マイページ', form_path(current_user.id), class: "my-page" %></li>
+            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-out" %></li>
+          </div>
+      </div>
+        <div class="simple-calender">
+                <div class="calender">
+                    <%= month_calendar events: @forms do |date, forms| %>
+                        <%= date.day %>
+                        <% forms.each do |form| %>
+                          <div>
+                            <%= link_to form.title, form %>
+                          </div>
+                        <% end %>
+                    <% end %>
+                </div>
+        </div>
         <br>
         <br>
          <div class="template">
@@ -87,7 +104,6 @@
               </div>
           </div>
         </div>
-      </div>
         <div class="footer-main">
             <div class="footer-content">
               <p class="content-memo">その中でも最もリラックスやストレスを軽減することができるのは運動と言われいます。<br>
@@ -102,4 +118,5 @@
       </div>
       <br>
       <%= render "shared/footer" %>
+    </div>
 </body>

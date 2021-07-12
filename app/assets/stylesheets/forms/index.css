@@ -50,10 +50,12 @@
   text-align: center;
 }
 
-.main-1 {
+.main-2 {
   text-align: center;
-  
+  background-image: url("../image11.jpg");
+  background-size: cover;
 }
+
 
 .top-header {
   font-size: 20px;
@@ -159,13 +161,15 @@
 .footer-bottom {
   text-align: center;
   font-size: 25px;
-  margin: 20px 0;
+  margin: 40px 0 140px 0;
 }
 
 .content-memo {
   font-size: 30px;
   color: #aa8f7b;
 }
+
+
 
 .login-flash-message {
   font-size: 30px;
