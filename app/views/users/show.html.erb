@@ -1,0 +1,56 @@
+<div class="user-main">
+  <div class="header-name">
+    <%= "#{@user.name}さんの詳細ページ" %>//
+    <%= link_to "ホームへ戻る", forms_path, class: "header-name" %>
+  </div>
+  <div class="inner">
+      <div class="user_wrapper">
+        <div class="left-page">
+              <table class="table">
+                <tbody class="table-main">
+                  <tr>
+                    <th class="table__col1">ニックネーム</th>
+                    <td class="table__col2"><%= @user.private_person.nickname %></td>
+                  </tr>
+                  <tr>
+                    <th class="table__col1">年齢</th>
+                    <td class="table__col2"><%= @user.age %></td>
+                  </tr>
+                  <tr>
+                    <th class="table__col1">住所</th>
+                    <td class="table__col2"><%= @user.private_person.address %></td>
+                  </tr>
+                  <tr>
+                    <th class="table__col1">住所</th>
+                    <td class="table__col2"><%= @user.private_person.profile %></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    
+    <div class="all_diary">
+       <%= "#{@user.name}さんの日記投稿一覧"%>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

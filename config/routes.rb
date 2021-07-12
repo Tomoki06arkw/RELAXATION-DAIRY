@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   root to: "texts#index"
   resources :forms
+  resources :users, only: [:show]
 end
