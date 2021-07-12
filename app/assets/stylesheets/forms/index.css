@@ -121,10 +121,6 @@
   font-size: 40px;
 }
 
-.iida {
-  margin-bottom: 30px ;
-}
-
 
 .table{
   border-collapse: collapse;
@@ -179,8 +175,9 @@
 .error_message{
   color: #aa8f7b;
 }
+
 .calender {
-  text-align:center;
+ text-align: center;
 }
 
 .main-2 {
@@ -203,4 +200,8 @@
 
 .actions {
   text-align: center;
+}
+
+.simple-calendar table {
+  width: 98%;
 }
