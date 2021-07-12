@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.center-header {
+  padding: 40px
+}
+
 .title {
   font-size: 40px;
   color: #aa8f7b;
@@ -204,4 +208,10 @@
 
 .simple-calendar table {
   width: 98%;
+}
+
+.exercise{
+  color: #aa8f7b;
+  font-size: 25px;
+  padding: 25px 0;
 }
