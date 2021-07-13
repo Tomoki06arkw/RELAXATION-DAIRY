@@ -12,7 +12,7 @@ class FormsController < ApplicationController
   def create
     @form = Form.new(form_params)
     if @form.save
-      redirect_to forms_path
+      redirect_to user_path(current_user.id)
     else
       render :new
     end
