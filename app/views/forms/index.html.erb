@@ -1,24 +1,23 @@
 <body>
-  
     <div class="main-2">
       <div class="main-header">
           <div class="left-header">
-            <%= link_to "RELAXATION DAIRY", root_path, class: "title" %>
+            <%= link_to "RELAXATION DAIRY", root_path, class: "main-title" %>
           </div>
           <div class="right-header">
             <li><%= link_to 'マイページ', user_path(current_user.id), class: "my-page" %></li>
-            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-out" %></li>
+            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-ou" %></li>
           </div>
       </div>
         <div class="simple-calender">
                 <div class="calender">
                     <%= month_calendar events: @forms do |date, forms| %>
                         <%= date.day %>
-                        <% forms.each do |form| %>
-                          <div>
-                            <%= link_to form.title, form %>
-                          </div>
-                        <% end %>
+                          <% forms.each do |form| %>
+                            <div>
+                              <%= link_to form.title, form %>
+                            </div>
+                          <% end %>
                     <% end %>
                 </div>
         </div>

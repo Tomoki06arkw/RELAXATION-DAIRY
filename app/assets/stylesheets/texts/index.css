@@ -180,6 +180,12 @@ h2 {
   font-size: 30px;
 }
 
+.field-profile {
+  width: 30%;
+  height: 40px;
+  font-size: 30px;
+}
+
 .submit-btn {
   font-size: 30px;
   margin: 30px auto;
