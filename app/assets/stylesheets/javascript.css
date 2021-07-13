@@ -7,6 +7,7 @@
   font-family: 'JosefinE Sans', sans-serif;
   font-size: 40px;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .title span {
@@ -67,4 +68,10 @@
 }
 .title span:nth-child(17) {
   transition-delay: 0.96s;
+}
+
+@media (max-width: 700px) {
+  .title{
+    font-size: 30px;
+  }
 }

@@ -4,10 +4,6 @@
           <% if user_signed_in? %>
             <div class="main">
               <div class="top-1">
-              <br>
-              <br>
-              <br>
-              <br>
                 <div class="head-message">
                   <div class="title">
                     <span>ロ</span>
@@ -54,9 +50,6 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
                 <div class="content">
                   <div class="title">
                     <span>今</span>
@@ -80,14 +73,12 @@
                 </div>            
                     <div class="log">
                       <%= link_to "新規登録", new_user_registration_path %> /
-                      <%= link_to "ログイン", new_user_session_path %>
+                      <%= link_to "ログイン", new_user_session_path%>
                     </div>
               </div>
             </div>
           <% end %>
       </div>
       <%= render "shared/footer" %>
-      <br>
-      <br>
   </div>
 </body>
