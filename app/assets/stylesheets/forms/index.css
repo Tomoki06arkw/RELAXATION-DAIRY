@@ -110,11 +110,6 @@
   text-align: center;
 }
 
-.meito {
-  font-size: 40px;
-  text-align: center;
-}
-
 .show-title {
   font-size: 25px;
 
@@ -129,7 +124,6 @@
   border-collapse: collapse;
   margin: 32px 0 32px 20px;
   width: 50%;
-
 }
 .table__col1{
   text-align: center;
@@ -217,7 +211,30 @@
   padding: 25px 0;
 }
 
+.footer-link {
+  margin-bottom: 50px;
+}
 
+.txt-contents {
+ margin-bottom: 50px;
+}
+
+.show-btn {
+  text-align: center;
+}
+
+.exercise-page {
+  margin: 10px 0 100px 0;
+}
+
+.youtube-page {
+  text-align: center;
+  margin: 30px;
+}
+
+.youtube {
+  font-size:40px;
+}
 
 @media (max-width: 700px) {
   .title {

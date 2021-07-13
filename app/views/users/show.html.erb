@@ -1,9 +1,7 @@
 <div class="user-main">
   <div class="header-name">
-    <%= "#{@user.name}さんの詳細ページ" %>//
-    <%= link_to "ホームへ戻る", forms_path, class: "header-name" %>
+    <%= "#{@user.name}さんの詳細ページ" %>
   </div>
-  <div class="inner">
       <div class="user_wrapper">
         <div class="left-page">
               <table class="table">
@@ -21,36 +19,29 @@
                     <td class="table__col2"><%= @user.private_person.address %></td>
                   </tr>
                   <tr>
-                    <th class="table__col1">住所</th>
+                    <th class="table__col1">自己紹介</th>
                     <td class="table__col2"><%= @user.private_person.profile %></td>
                   </tr>
                 </tbody>
               </table>
         </div>
       </div>
-    
-    <div class="all_diary">
-       <%= "#{@user.name}さんの日記投稿一覧"%>
-    </div>
+        <div class="exercise-page">
+          <p class="content-memo">日記を書いた後は運動でもどうですか？？<br>
+          チャンネル登録者１５万人が教えるHIITトレーニングです。<br>
+          運動をして明日も元気にいきましょう。
+          </p>
+          <div class="youtube-page">
+          <a class="youtube" href="https://www.youtube.com/channel/UC_x_e-SGSU-basLUFOQ6FJA/videos" target="_blank" rel="noopener">Go for it!!</a>
+          </div>
+          <div class="show-btn">
+            <%= link_to "ホームへ戻る", forms_path, class: "header-name" %>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </div>

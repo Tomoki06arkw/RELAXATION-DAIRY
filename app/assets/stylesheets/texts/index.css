@@ -18,6 +18,7 @@ body {
 a {
   color:darkblue;
   text-decoration: none;
+  font-size: 30px;
 }
 
 a:hover{
@@ -36,7 +37,7 @@ a:hover{
 
 .log {
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 200px;
   text-align: center;
 }
 
@@ -63,9 +64,10 @@ h2 {
   font-size: 35px;
   color: #aa8f7b;
   font-family: 'Noto Serif JP', serif;
+  margin-top: 100px;
 }
 
-.all {
+.content-field {
   text-align: center;
   font-size: 30px;
 }
@@ -84,6 +86,7 @@ h2 {
 .context {
   font-size: 30px;
   color:#aa8f7b;
+  
 }
 
 .footer-word {
@@ -134,8 +137,9 @@ h2 {
   font-size: 25px;
 }
 
-.header-content {
+.footer-content {
   text-align: center;
+  padding: 190px 0 10px 0;
 }
 
 .name-field {
@@ -164,6 +168,7 @@ h2 {
 
 .next-btn {
   font-size: 20px;
+  margin: 20px auto;
 }
 
 .field-main {
@@ -173,7 +178,8 @@ h2 {
 }
 
 .submit-btn {
-  font-size: 20px;
+  font-size: 30px;
+  margin: 30px auto;
 }
 
 .page-heading {
@@ -181,4 +187,24 @@ h2 {
   padding: 40px 0 ;
   font-size: 40px;
   color:#aa8f7b;
+}
+
+.footer-info{
+  margin: 50px
+}
+
+.footer-btn {
+  margin-bottom: 120px;
+}
+
+.footer-new-info {
+  text-align: center;
+}
+
+.btn {
+  font-size: 30px;
+}
+
+.enter-btn {
+  font-size: 40px;
 }

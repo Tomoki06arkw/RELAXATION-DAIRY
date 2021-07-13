@@ -24,7 +24,7 @@
                   </div> 
                 </div>
                   <div class="context">
-                    <%=  "#{current_user.name}さん。" %>
+                    <%=  "ようこそ！！#{current_user.name}さん。" %>
                   </div>
                   <p class="lead"><br>今日あったことを振り返ったり、向き合ったりするときは<br>
                     文章を書いたり打ったりしましょう。<br>
@@ -32,7 +32,7 @@
                   </p>
                   <div class="log-main">
                       <div class="enter">
-                        <%= link_to "Enter the Room",  forms_path, class: "btn" %>
+                        <%= link_to "Enter the Room",  forms_path, class: "enter-btn" %>
                       </div>
                       <div class="log-out">
                         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn2" %>
@@ -42,7 +42,6 @@
             </div>
           <% else %>
             <div class="main">
-              <div class="article">
                 <br>
                 <br>
                 <br>
@@ -78,11 +77,7 @@
                     <span>た</span>
                     <span>。</span>
                   </div> 
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
+                </div>            
                     <div class="log">
                       <%= link_to "新規登録", new_user_registration_path %> /
                       <%= link_to "ログイン", new_user_session_path %>
@@ -91,16 +86,8 @@
             </div>
           <% end %>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
       <%= render "shared/footer" %>
+      <br>
+      <br>
   </div>
 </body>
