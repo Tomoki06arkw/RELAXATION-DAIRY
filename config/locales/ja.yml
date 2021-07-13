@@ -4,4 +4,7 @@ ja:
       user:
         name: 名前
         age: 年齢
-      
+      private_person:
+        nickname: ニックネーム
+        address: 住所
+        profile: 自己紹介
