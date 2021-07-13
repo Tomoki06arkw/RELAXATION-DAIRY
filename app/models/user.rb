@@ -7,7 +7,7 @@ class User < ApplicationRecord
   with_options presence: true do
     validates :name,  format: {with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/} do
     end
-    validates :age 
+    validates :age
   end
   has_one :private_person
   has_many :forms
