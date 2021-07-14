@@ -193,6 +193,13 @@
   text-align: center;
 }
 
+.field_content::placeholder {
+  text-align: center;
+}
+.field_top::placeholder {
+  text-align: center;
+}
+
 .actions {
   text-align: center;
 }

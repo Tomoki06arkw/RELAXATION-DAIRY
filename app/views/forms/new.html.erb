@@ -23,14 +23,15 @@
               <%= form_with model: @form, local: true do |f|%>
                 <div class="field">
                   <%= f.label :title, "Title" %><br />
-                  <%= f.text_field :title, id:"form_title", class: "field_top" %>
+                  <%= f.text_field :title, id:"form_title", class: "field_top", placeholder: "タイトル" %>
                 </div>
                 <br>
                 <br>
                 <div class="field">
                   <%= f.label :content, "Write without thinking" %><br />
                   <br>
-                  <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content" %>
+                  <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content",
+                  placeholder: "３行に分けて書き下さい。" %>
                 </div>
                 <br>
                 <br>
@@ -53,14 +54,9 @@
           </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
     <div class="container">
         <div class="footer-content">
             <h1 class="footer-word">お疲れさまでした。</h1>
-    <br>
-    <br>
             <p class="footer-word">後日に見返してみましょう。</p>
     <br>
     <br>
