@@ -14,9 +14,11 @@
                     <%= month_calendar events: @forms do |date, forms| %>
                         <%= date.day %>
                           <% forms.each do |form| %>
-                            <div>
-                              <%= link_to form.title, form %>
-                            </div>
+                            <% if current_user.id == form.user.id %>
+                              <div>
+                                <%= link_to form.title, form %>
+                              </div>
+                            <% end %>
                           <% end %>
                     <% end %>
                 </div>
