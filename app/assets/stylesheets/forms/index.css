@@ -239,6 +239,19 @@
   font-size:40px;
 }
 
+h3 {
+  font-size: 30px;
+  color: #aa8f7b;
+}
+
+.explain-title {
+  font-size: 30px
+}
+
+.sentence {
+  font-size: 20px;
+}
+
 
 @media (max-width: 1024px) {
   .title {
@@ -258,15 +271,15 @@
     font-size: 30px;
   }
   .my-page {
-    font-size: 10px;
+    font-size: 15px;
   }
   .log-ou {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 500px) {
   .main-title {
-    font-size: 15px;
+    font-size: 25px;
   }
 }

@@ -22,9 +22,13 @@
                   <div class="context">
                     <%=  "#{current_user.name}さん" %>
                   </div>
-                  <p class="lead"><br>今日あったことを振り返ったり、向き合ったりするときは<br>
-                    文章を書いたり打ったりしましょう。<br>
+                  <p class="lead"><br>今日あったことを振り返りましょう。<br>
+                  <br>
+                    1, 今日一番自分が失敗したこと。<br>
+                    2, 今日一番感動したこと。<br>
+                    3, 明日の自分の目標。<br>
                     <br>
+                      この３つを日記に書きましょう。<br>
                   </p>
                   <div class="log-main">
                       <div class="enter">
@@ -46,6 +50,9 @@
                 <br>
                 <br>
                 <br>
+                <div class="title">
+                    <span>RELAXATION DAIRY</span>
+                  </div>   
                 <div class="content">
                   <div class="title">
                     <span>今</span>
@@ -63,32 +70,20 @@
                     <span>た</span>
                     <span>。</span>
                   </div> 
-                </div>   
-                  <div class="title">
-                    <span>新</span>
-                    <span>規</span>
-                    <span>登</span>
-                    <span>録</span>
-                    <span>ま</span>
-                    <span>た</span>
-                    <span>は</span>
-                    <span>ロ</span>
-                    <span>グ</span>
-                    <span>イ</span>
-                    <span>ン</span>
-                    <span>し</span>
-                    <span>て</span>
-                    <span>下</span>
-                    <span>さ</span>
-                    <span>い</span>
-                    <span>。</span>
-                  </div>          
+                </div>          
                     <div class="log">
                       <%= link_to "新規登録", new_user_registration_path %> /
                       <%= link_to "ログイン", new_user_session_path%>
                     </div>
               </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
           <% end %>
       </div>
       <%= render "shared/footer" %>

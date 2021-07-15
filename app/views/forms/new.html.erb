@@ -23,15 +23,15 @@
               <%= form_with model: @form, local: true do |f|%>
                 <div class="field">
                   <%= f.label :title, "Title" %><br />
-                  <%= f.text_field :title, id:"form_title", class: "field_top", placeholder: "タイトル" %>
+                  <%= f.text_field :title, id:"form_title", class: "field_top"%>
                 </div>
                 <br>
                 <br>
                 <div class="field">
-                  <%= f.label :content, "Write without thinking" %><br />
+                  <%= f.label :content, "Please relax and write" %><br />
                   <br>
                   <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content",
-                  placeholder: "悲しいこと辛いことをお書き下さい" %>
+                  placeholder: "５分以内に書き終えて下さい。" %>
                 </div>
                 <br>
                 <br>

@@ -4,13 +4,13 @@
       <h2 class="page-heading">日記編集</h2>
       <%= form_with model: @form, local: true do |f|%>
             <div class="field">
-              <%= f.label :title, "今日の出来事" %><br />
+              <%= f.label :title, "Title" %><br />
               <%= f.text_field :title, id:"form_title", class: "field_top" %>
             </div>
             <br>
             <br>
             <div class="field">
-              <%= f.label :content, "ゼロ秒思考で書きましょう。" %><br />
+              <%= f.label :content, "編集して下さい" %><br />
               <%= f.text_area :content, class: :form__text, id:"form_content", class: "field_content" %>
             </div>
             <br>
