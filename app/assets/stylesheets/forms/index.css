@@ -119,8 +119,10 @@
 .table{
   border-collapse: collapse;
   margin: 32px 0 32px 20px;
-  width: 50%;
+  table-layout: fixed;
+  width: 100%;
 }
+
 .table__col1{
   text-align: center;
   font-weight: bold;
@@ -251,7 +253,6 @@ h3 {
 .sentence {
   font-size: 20px;
 }
-
 
 @media (max-width: 1024px) {
   .title {
