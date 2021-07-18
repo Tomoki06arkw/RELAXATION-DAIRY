@@ -8,3 +8,7 @@ ja:
         nickname: ニックネーム
         address: 住所
         profile: 自己紹介
+ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
