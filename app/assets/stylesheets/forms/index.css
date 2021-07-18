@@ -119,8 +119,7 @@
 .table{
   border-collapse: collapse;
   margin: 32px 0 32px 20px;
-  table-layout: fixed;
-  width: 100%;
+  width: 50%;
 }
 
 .table__col1{
