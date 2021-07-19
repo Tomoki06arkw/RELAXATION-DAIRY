@@ -282,4 +282,7 @@ h3 {
   .main-title {
     font-size: 25px;
   }
+  .table {
+    width: 100%;
+  }
 }
