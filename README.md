@@ -34,10 +34,11 @@ test@com / test11  ID= admin / Pass 2222
 音楽機能
 ・日記を書いている時にリラックスしながら音楽を聴くことができる。
 
-# トップページとライティングページの詳細動画
+# トップページとライティングページの詳細動画,画像
 トップページ ![demo](https://gyazo.com/0b473ad54c03844774b049714b2e4ee5/raw)
 
-ライティングページ ![demo](https://gyazo.com/e74d7a33294e17aeda3855bfe33220d2/raw)
+ライティングページ ![2021-07-20 14 22のイメージ](https://user-images.githubusercontent.com/84255600/126266200-845971b8-d445-41ad-aebd-a39b9fe085f5.jpg)
+
 
 データベース設計	
 
