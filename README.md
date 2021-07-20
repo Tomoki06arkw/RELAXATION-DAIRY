@@ -35,11 +35,9 @@ test@com / test11  ID= admin / Pass 2222
 ・日記を書いている時にリラックスしながら音楽を聴くことができる。
 
 # トップページとライティングページの詳細動画
-トップページ→ ![2021-07-20 13 02のイメージ](https://user-images.githubusercontent.com/84255600/126260189-f5e64a45-6029-498f-8f20-0563bbde922d.jpg)
+トップページ→ ![demo](https://gyazo.com/0b473ad54c03844774b049714b2e4ee5/raw)
 
-ライティングページ→ ![demo](https://gyazo.com/aa38e6649cccf0ee3cb82572918b498c/raw)
-
-詳細ページでのYouTubeを紹介→ https://gyazo.com/1d8bc551bb28ed0d5475c2db8807913b
+ライティングページ→ ![demo](https://gyazo.com/b0fe85ad0174a493f2212886562d6e53/raw)
 
 データベース設計	
 
