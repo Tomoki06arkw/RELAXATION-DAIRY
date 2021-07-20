@@ -188,6 +188,7 @@
 
 .time {
   text-align: center;
+  visibility:hidden;
 }
 
 .field-image {
