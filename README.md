@@ -37,7 +37,7 @@ test@com / test11  ID= admin / Pass 2222
 # トップページとライティングページの詳細動画
 トップページ ![demo](https://gyazo.com/0b473ad54c03844774b049714b2e4ee5/raw)
 
-ライティングページ ![demo](https://gyazo.com/1697f3e18d8d1037942f3d2f9d323209/raw)
+ライティングページ ![demo](https://gyazo.com/e74d7a33294e17aeda3855bfe33220d2/raw)
 
 データベース設計	
 
