@@ -1,12 +1,12 @@
 $(function () {
-    const CLASSNAME = "-visible";
+    const INDEX = "-visible";
     const TIMEOUT = 2500;
     const $target = $(".title");
 
     setInterval(() => {
-      $target.addClass(CLASSNAME);
+      $target.addClass(INDEX);
       setTimeout(() => {
-        $target.removeClass(CLASSNAME);
+        $target.removeClass(INDEX);
       }, TIMEOUT);
     }, TIMEOUT * 2)
 });
