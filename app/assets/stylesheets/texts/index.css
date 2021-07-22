@@ -2,6 +2,10 @@ body {
  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
+.container {
+  text-align: center;
+}
+
 .header-main {
   font-size: 30px;
   padding: 30px auto;
