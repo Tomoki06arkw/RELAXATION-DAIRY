@@ -193,9 +193,12 @@
 
 .field_content::placeholder {
   text-align: center;
+  color: #bbb
 }
+
 .field_top::placeholder {
   text-align: center;
+
 }
 
 .actions {
