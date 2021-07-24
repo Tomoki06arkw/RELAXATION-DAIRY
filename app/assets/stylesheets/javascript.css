@@ -60,15 +60,6 @@
 .title span:nth-child(14) {
   transition-delay: 0.78s;
 }
-.title span:nth-child(15) {
-  transition-delay: 0.84s;
-}
-.title span:nth-child(16) {
-  transition-delay: 0.90s;
-}
-.title span:nth-child(17) {
-  transition-delay: 0.96s;
-}
 
 @media (max-width: 700px) {
   .title{
