@@ -1,6 +1,6 @@
 $(function () {
     const INDEX = "-visible";
-    const TIMEOUT = 2500;
+    const TIMEOUT = 4000;
     const $target = $(".title");
 
     setInterval(() => {
