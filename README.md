@@ -51,8 +51,9 @@ test@com / test11  ID= admin / Pass 2222
 
 # トップページとライティングページの詳細動画,画像
 トップページ ![demo](https://gyazo.com/0b473ad54c03844774b049714b2e4ee5/raw)
+https://gyazo.com/91e4844cddfbe0e2fe88b3fe2e0ddcd2
 
-ログイン画面　![2021-07-20 14 52のイメージ](https://user-images.githubusercontent.com/84255600/126270310-45b1f66e-ceb1-4290-9090-2c4f94c4bd8c.jpg)
+ログイン画面 ![2021-07-20 14 52のイメージ](https://user-images.githubusercontent.com/84255600/126270310-45b1f66e-ceb1-4290-9090-2c4f94c4bd8c.jpg)
 
 ライティングページ ![2021-07-20 14 22のイメージ](https://user-images.githubusercontent.com/84255600/126266200-845971b8-d445-41ad-aebd-a39b9fe085f5.jpg)
 
